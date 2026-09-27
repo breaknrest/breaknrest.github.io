@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>break. — A pause for what truly matters</title>
+  <meta name="description"
+    content="A gentle sanctuary for your career break. Time for loved ones, for healing, and for the most important moments of life.">
+
+  <!-- =========================================================================
+       Google Analytics (GA4) Placeholder
+       Replace 'G-XXXXXXXXXX' in both lines below with your Measurement ID
+       ========================================================================= -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9W70SF36K5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9W70SF36K5');
+  </script>
+
+  <!-- Editorial Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="dark">
+
+  <!-- =========================================================================
+       BACKGROUND MEDIA (LOCAL VIDEO ONLY)
+       Place your video in assets/ (e.g. assets/video.mp4 or assets/video.webm)
+       Configure filename in script.js (BREAK_CONFIG.localVideoPath)
+       ========================================================================= -->
+  <div id="bg-media-container" class="bg-media-container">
+
+    <!-- 1. Ambient Poster Fallback -->
+    <div class="bg-poster" style="background-image: url('assets/poster.jpg');" aria-hidden="true"></div>
+
+    <!-- 2. Local Video Player (HTML5 Video) -->
+    <video id="bg-video" class="bg-video" autoplay muted loop playsinline preload="auto" poster="assets/poster.jpg">
+      <source id="bg-video-source-mp4" src="assets/video.mp4" type="video/mp4">
+      <source id="bg-video-source-webm" src="assets/video.webm" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- 3. Readability Gradient Overlay & Film Texture -->
+    <div class="bg-overlay" id="bg-overlay"></div>
+    <div class="bg-grain" aria-hidden="true"></div>
+  </div>
+
+  <!-- Single Screen Viewport (No scrolling needed) -->
+  <div class="viewport-wrapper">
+
+    <!-- Top Minimal Navigation -->
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand-logo">
+          <span class="brand-text">break<span class="accent-dot">.</span></span>
+        </div>
+
+        <!-- Ambient Sound Toggle -->
+        <button id="sound-toggle-btn" class="action-pill sound-btn" aria-label="Toggle ambient soothing waves">
+          <span class="sound-icon-waves">
+            <span class="bar bar-1"></span>
+            <span class="bar bar-2"></span>
+            <span class="bar bar-3"></span>
+          </span>
+          <span class="btn-text">Ambience: <span id="sound-state-text">Off</span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Center Content: The Pure Message -->
+    <main class="center-stage">
+      <div class="message-card">
+
+        <div class="eyebrow-pill animate-fade-in" style="--delay: 0.1s">
+          <span class="badge-dot"></span>
+          <span>A pause for life</span>
+        </div>
+
+        <h1 class="main-title animate-fade-in" style="--delay: 0.3s">
+          Time for what <br>
+          <span class="italic-serif">truly matters</span>.
+        </h1>
+
+        <p class="sub-title animate-fade-in" style="--delay: 0.5s">
+          A career break is a gift of unhurried time — to be fully present with our loved ones,
+          to heal and reflect, and to give yourself the quiet space to simply live.
+        </p>
+
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <nav class="social-links" aria-label="Social media">
+          <a class="social-link" href="https://www.linkedin.com/company/breaknrest" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.4a1.56 1.56 0 0 1 0 3.1ZM5.5 9.88h2.8v8.62H5.5V9.88Zm4.6 0h2.68v1.18h.04c.37-.71 1.29-1.46 2.66-1.46 2.85 0 3.38 1.87 3.38 4.3v4.6h-2.8v-4.3c0-1.02-.02-2.33-1.42-2.33-1.43 0-1.64 1.11-1.64 2.26v4.38H10.1V9.88Z"/></svg>
+          </a>
+          <a class="social-link" href="https://www.facebook.com" target="_blank" rel="noreferrer" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.8 21v-8.2h2.75l.41-3.18h-3.16V7.2c0-.92.26-1.55 1.58-1.55H17V2.66c-.28-.04-1.24-.12-2.35-.12-2.33 0-3.92 1.42-3.92 4.03v2.25H8v3.18h2.73V21h3.07Z"/></svg>
+          </a>
+          <a class="social-link" href="https://www.instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 1.8A3.7 3.7 0 0 0 3.8 7.5v9A3.7 3.7 0 0 0 7.5 20.2h9a3.7 3.7 0 0 0 3.7-3.7v-9a3.7 3.7 0 0 0-3.7-3.7h-9Zm9.47 2.25a1.08 1.08 0 1 1 0 2.16 1.08 1.08 0 0 1 0-2.16ZM12 6.5A5.5 5.5 0 1 1 12 17.5A5.5 5.5 0 0 1 12 6.5Zm0 1.8A3.7 3.7 0 1 0 12 17.7A3.7 3.7 0 0 0 12 8.3Z"/></svg>
+          </a>
+        </nav>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
